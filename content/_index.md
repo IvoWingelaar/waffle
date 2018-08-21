@@ -23,7 +23,6 @@ Nullam luctus at libero non lacinia. Vestibulum ante ipsum primis in faucibus or
 pub fn do_thing(x: u32) -> Arc<u32> {
     Arc::new(x)
 }
-
 ```
 
 In hac habitasse platea dictumst. Etiam ultricies, quam in varius aliquet, ex lacus efficitur tortor, vitae dictum velit justo at ipsum. Vestibulum rutrum elementum hendrerit. Mauris sollicitudin, est aliquet lacinia euismod, turpis odio fermentum est, et ornare orci arcu nec nulla. Donec dignissim diam velit, sed pellentesque sapien posuere quis. Duis ut ipsum urna. Proin metus turpis, mattis in gravida id, finibus et leo. Fusce dictum vel diam ac hendrerit. Duis rhoncus metus in vulputate mollis. Nullam arcu ante, accumsan ac hendrerit malesuada, iaculis sit amet ipsum. Curabitur tincidunt sem in leo interdum efficitur. In imperdiet dolor lectus, ut elementum libero sodales vel. 

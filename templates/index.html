@@ -13,15 +13,34 @@
     </head>
 
   <body>
-    {% include "aside.html" %}
+    {% block aside %}
+    <aside>
+        <article>
+        <section>
+            <img src="drawing.svg" width="200px" height="200px"/>
+            <h1>{{ config.extra.author }}</h1>
+            <p>Some text</p>
+            <h2>Home</h2>
+            <h2>Portfolio</h2>
+            <h2>Blog</h2>
+        </section>
+        </article>
+    </aside>
+    {% endblock aside %}
+
     <header>
       <p>Navigation text</p>
     </header>
     <main>
-       <article>
+    {% block content %}
         {{ section.content | safe }}
-        </article>
+    {% endblock content %}
     </main>
-    {% include "footer.html" %}
+    {% block footer %}
+    <footer>
+        <p>Copyright © 2018 {{ config.extra.author }}</p>
+        <p>Built using <a href="https://www.getgutenberg.io">Gutenberg</a> using a custom theme inspired by <a href="https://github.com/alexandrevicenzi/flex">Flex</a> for Pelican by Alexandre Vicenzi</p>
+    </footer>
+    {% endblock footer %}
   </body>
 </html>

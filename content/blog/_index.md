@@ -1,0 +1,6 @@
++++
++++
+
+# Blog page
+
+Blog text

@@ -40,3 +40,17 @@ main {
 
 @import "aside.scss";
 @import "footer.scss";
+
+article.portfolio {
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-template-areas: "h s";
+
+    header {
+        grid-area: h;
+    }
+
+    section {
+        grid-area: s;
+    }
+}
