@@ -1,0 +1,55 @@
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: Source Sans Pro, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  color: #34495e;
+  background: #fefefe;
+}
+
+a {
+  color: #34495e;
+  text-decoration: none;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.4em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h2, h3 {
+  font-weight: 300;
+}
+
+pre {
+  display: block;
+  padding: 1rem;
+}
+
+pre, code {
+  font-size: 90%;
+  overflow: auto;
+  font-family: $code-font-family;
+  margin-bottom: 0;
+}
+
+pre > code {
+  display: block;
+  border: none;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+iframe {
+  border: 0;
+}

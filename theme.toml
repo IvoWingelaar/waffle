@@ -1,0 +1,11 @@
+name = "Waffle"
+description = "A simple portfolio/blog theme based on Flex (Pelican)"
+license = "MIT"
+homepage = "https://github.com/IvoWingelaar/waffle"
+min_version = "0.4.0"
+demo = ""
+
+[extra]
+
+[author]
+name = "Ivo Wingelaar"

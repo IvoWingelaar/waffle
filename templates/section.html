@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) }}">
+    </head>
+    <body>
+        {% include "aside.html" %}
+        <main>
+            <header>
+              <p>Textsdfsdfsdf</p>
+            </header>
+            <article>
+            {{ section.content | safe }}
+            {% for page in section.pages %}
+               <article class="post">
+                   <header>
+                       <h2>{{ page.extra.cat }}</h2>
+                       {% if page.extra.subcat %}
+                       <h3>{{ page.extra.subcat }}</h3>
+                       {% endif %}
+                       <h3>{{ page.year }}</h3>
+                   </header>
+                   <section>
+                       <h2>{{ page.title }}</h1>
+                       {{ page.content | safe }}
+                   </section>
+               </article>
+            {% endfor %}
+            </article>
+            {% include "footer.html" %}
+        </main>
+    </body>
+</html>
