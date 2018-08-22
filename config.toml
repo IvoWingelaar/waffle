@@ -4,3 +4,4 @@ highlight_theme = "ir-white"
 
 [extra]
 author = "Your Name"
+waffle_image = "drawing.svg"

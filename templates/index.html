@@ -17,7 +17,7 @@
     <aside>
         <article>
         <section>
-            <img src="drawing.svg" width="200px" height="200px"/>
+            <img src="{{ config.extra.waffle_image }}" width="200px" height="200px"/>
             <h1>{{ config.extra.author }}</h1>
             <p>Some text</p>
             <h2>Home</h2>
@@ -29,7 +29,7 @@
     {% endblock aside %}
 
     <header>
-      <p>Navigation text</p>
+      <p><a>icsw.xyz</a></p>
     </header>
     <main>
     {% block content %}
