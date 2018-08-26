@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+      <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) }}" />
       <meta charset="utf-8">
-<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
       <meta name="description" content="{{ config.description }}">
       <meta name="author" content="{{ config.extra.author }}">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>{{ config.title }}</title>
-      <link rel="stylesheet" href="{{ get_url(path="site.css") }}" />
       <link rel="shortcut icon" type="image/png" href="{{ get_url(path="favicon.ico") }}"/>
       <link href="{{ get_url(path="rss.xml") }}" rel="feed" type="application/rss+xml" title="{{ config.title }}" />
     </head>
@@ -17,7 +17,7 @@
     <aside>
         <article>
         <section>
-            <img src="{{ config.extra.waffle_image }}" width="200px" height="200px"/>
+            <img src="{{ get_url(path=config.extra.waffle_image, trailing_slash=false) }}" width="200px" height="200px"/>
             <h1>{{ config.extra.author }}</h1>
             <p>Some text</p>
             <h2>Home</h2>
